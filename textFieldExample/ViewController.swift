@@ -36,6 +36,7 @@ extension ViewController: UITextFieldDelegate {
         if textField == usernameField {
             if textField.text == ""{
                 let alert = UIAlertController(title: "Caution", message: "Please Insert Username", preferredStyle: .alert)
+                // tombol ok
                 alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
             }
